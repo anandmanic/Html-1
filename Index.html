@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Front End Session</title>
+        <link rel="stylesheet" href="Style.css">
+        <style>
+            /* body{
+            background-color: lightgreen;
+            } */
+            div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                position: relative;
+                animation: myname 5s infinite;
+            }
+            @keyframes myname{
+                0%{top:0px; left: 0px; background: red;}
+                25%{top:0px; left: 100px; background: orange;}
+                50%{top: 100px; left: 100px; background: yellow;}
+                75%{top: 100px; left: 0px; background: yellowgreen;}
+                100%{top:0px; left: 0px; background: green;}
+            }
+            p.text {
+                border: 2px solid red;
+                border-width: 10px 1px 5px 20px;
+                border-radius: 12px;
+                padding: 5px;
+            }
+            .flex{
+                background-color: violet;
+                width: 200px;
+                height: 200px;
+            }
+            .flex1{
+                background-color: black;
+                width: 500px;
+                height: 350px;
+            }
+            @media only screen and (max-width: 1200px) {
+                body{
+                    background-color: lightblue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="color:black;background-color: lightgoldenrodyellow;width:15%;">Application Form</h2>
+        <div>
+        </div>
+        <!-- <div class="flex">
+            <div><b>1</b></div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="flex1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div> -->
+
+        <form>
+            <h4 style="color:black;background-color: lightpink;width:9%;">Personal Details</h4>
+            <p class="text">Collecting personal details</p>
+                <label>First name:</label><br>
+                <input placeholder="Firstname" type="text"><br>
+                <label>Last name:</label><br>
+                <input placeholder="Lastname"><br>
+                <label>Date of Birth:</label><br>
+                <input type="date"><br>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="Gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="Gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="trans" name="Gender" value="Transgender">
+                <label for="trans">Transgender</label><br>
+                <label>Address:</label><br>
+                <input placeholder="Address"><br>
+                <label>Email Address:</label><br>
+                <input placeholder="Email id" type="email"><br>
+                <label>Contact Number:</label><br>
+                <input placeholder="Mobile no" type="number"><br>
+            <h4 style="color:black;background-color: lightpink;width:8%;">Team/Division</h4>
+            <p id="para">Collecting Contact details</p>
+                <label>Content Type:</label>
+                <input type="checkbox" id="poster" name="type1" value="Poster">
+                <label for="poster">Poster</label>
+                <input type="checkbox" id="newsletter" name="type2" value="Newsletter">
+                <label for="newsletter">Newsletter</label>
+                <input type="checkbox" id="video" name="type1" value="Video">
+                <label for="video">Video</label><br><br>
+            
+                <h4 style="color:black;background-color: lightpink;width:9%;">Personal Details</h4>
+                <p class="text">Collecting personal details</p>
+                    <label>First name:</label><br>
+                    <input placeholder="Firstname" type="text"><br>
+                    <label>Last name:</label><br>
+                    <input placeholder="Lastname"><br>
+                    <label>Date of Birth:</label><br>
+                    <input type="date"><br>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="Gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="Gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="trans" name="Gender" value="Transgender">
+                    <label for="trans">Transgender</label><br>
+                    <label>Address:</label><br>
+                    <input placeholder="Address"><br>
+                    <label>Email Address:</label><br>
+                    <input placeholder="Email id" type="email"><br>
+                    <label>Contact Number:</label><br>
+                    <input placeholder="Mobile no" type="number"><br>
+            <button>Submit</button><br>
+        </form>
+        <hr>    
+    </body>
